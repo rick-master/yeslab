@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/marvel_bold"
+            android:text="MARVEL"
+            android:textColor="@color/black"
+
+            android:textSize="32sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marvel_bold"
+
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@android:color/holo_red_dark"
+
+            android:text="MOVIES"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Movies Available"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:layout_marginTop="13dp"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear"
+        android:fontFamily="@font/marvel_bold"
+
+        android:layout_height="wrap_content"/>
+    <ListView
+
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="60dp"
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+    android:background="@android:color/holo_red_dark"
+    android:layout_marginTop="50dp"
+    android:layout_below="@+id/list"
+    android:layout_centerHorizontal="true"
+
+    android:layout_height="70dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:fontFamily="@font/marvel_bold"
+android:textColor="@color/black"
+        android:id="@+id/detailsview"
+        android:layout_height="wrap_content"/>
+
+
+</com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
